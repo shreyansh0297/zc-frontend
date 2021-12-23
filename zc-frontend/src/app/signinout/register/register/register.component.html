@@ -1,1 +1,132 @@
-<p>register works!</p>
+<section>
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <div class="signup-form">
+            <div class="form-header d-flex justify-content-center align-items-center">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="form-body d-flex justify-content-center align-items-center">
+                <!-- <form novalidate [formGroup]="addUserForm" (ngSubmit)="userRegister()">
+                    <div class="input-group form-group" [ngClass]="{
+                    'has-danger': name.invalid && (name.dirty || name.touched),
+                    'has-success': name.valid && (name.dirty || name.touched)
+                    }">
+                        <span class="input-group-text" id="name"><i class="fas fa-user"></i></span>
+                        <input type="text" formControlName="name" name="name" class="form-control" placeholder="Name"
+                            aria-label="Name" aria-describedby="name" required />
+                    </div>
+                    <div class="form-control-feedback" *ngIf="name.errors && (name.dirty || name.touched)">
+                        <p *ngIf="name.errors.required" class="text-danger">
+                            Name Is Required
+                        </p>
+                    </div>
+
+                    <div class="input-group form-group" [ngClass]="{
+                    'has-danger':
+                    phoneNumber.invalid &&
+                        (phoneNumber.dirty || phoneNumber.touched),
+                    'has-success':
+                    phoneNumber.valid && (phoneNumber.dirty || phoneNumber.touched)
+                    }">
+                        <span class="input-group-text" id="phone"><i class="fas fa-phone-alt"></i></span>
+                        <input type="text" formControlName="phoneNumber" name="phone" class="form-control"
+                            placeholder="Phone Number" aria-label="Phone Number" aria-describedby="phone" required />
+                    </div>
+                    <div class="form-control-feedback" *ngIf="
+                    phoneNumber.errors && (phoneNumber.dirty || phoneNumber.touched)
+                        ">
+                        <p *ngIf="phoneNumber.errors.required" class="text-danger">
+                            Phone Number Is Required
+                        </p>
+                        <p *ngIf="phoneNumber.errors.pattern" class="text-danger">
+                            Invalid Phone Number
+                        </p>
+                    </div>
+
+                    <div class="input-group form-group" [ngClass]="{
+                    'has-danger':
+                        emailId.invalid && (emailId.dirty || emailId.touched),
+                    'has-success': emailId.valid && (emailId.dirty || emailId.touched)
+                    }">
+                        <span class="input-group-text" id="email"><i class="fas fa-envelope"></i></span>
+                        <input type="text" formControlName="emailId" name="email" class="form-control"
+                            placeholder="Email" aria-label="Email" aria-describedby="email" required />
+                    </div>
+                    <div class="form-control-feedback" *ngIf="emailId.errors && (emailId.dirty || emailId.touched)">
+                        <p *ngIf="emailId.errors.required" class="text-danger">
+                            Email Is Required
+                        </p>
+                        <p *ngIf="emailId.errors.pattern" class="text-danger">
+                            The Email Address Must Contain @ Character
+                        </p>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-text" id="address"><i class="fas fa-home"></i></span>
+                        <input type="text" class="form-control" placeholder="Address" aria-label="Address"
+                            aria-describedby="address" required>
+                    </div>
+
+                    <div class="input-group form-group" [ngClass]="{
+                    'has-danger':
+                        password.invalid && (password.dirty || password.touched),
+                    'has-success':
+                        password.valid && (password.dirty || password.touched)
+                    }">
+                        <span class="input-group-text" id="password"><i class="fas fa-lock"></i></span>
+                        <input type="password" formControlName="password" name="password" class="form-control"
+                            placeholder="Password" aria-label="Password" aria-describedby="Password" required />
+                    </div>
+                    <div class="form-control-feedback" *ngIf="password.errors && (password.dirty || password.touched)">
+                        <p *ngIf="password.errors.required" class="text-danger">
+                            Password Is Required
+                        </p>
+                        <p *ngIf="password.errors.minlength" class="text-danger">
+                            Password Must Be 8 Characters Long, We Need Another
+                            {{
+                            password.errors.minlength.requiredLength -
+                            password.errors.minlength.actualLength
+                            }}
+                            Characters
+                        </p>
+                    </div>
+                    <div class="submit-button">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button class="btn btn-success">
+                                    Register <i class="fas fa-user-plus"></i>
+                                </button>
+                                <button class="btn btn-primary" (click)="onBack();">
+                                    Back <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form> -->
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="email" class="form-control" id="name" aria-describedby="emailHelp"
+                            placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="form-footer d-flex justify-content-center align-items-center">
+                <h6>
+                    Already have an account?&nbsp;<a [routerLink]="['/login']">Login</a>
+                </h6>
+            </div>
+        </div>
+    </div>
+</section>
