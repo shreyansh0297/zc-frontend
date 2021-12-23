@@ -1,0 +1,22 @@
+.navbar {
+    background-color: royalblue;
+  }
+  .nav-item .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .btn-outline-light {
+    font-weight: 500;
+  }
+  .background img {
+    width: 600px;
+    height: 300px;
+    opacity: 0.4;
+    overflow: hidden;
+  }
+  .dropdown-toggle {
+    margin: 0rem 0.5rem;
+  }
+  .nav-item {
+    margin: auto;
+  }
